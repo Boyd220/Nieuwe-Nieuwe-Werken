@@ -6,7 +6,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { OverzichtPage} from '../pages/overzicht/overzicht';
 import { PakketMakenPage } from '../pages/pakket-maken/pakket-maken';
 import { ReviewPage } from '../pages/review/review';
 import { ProfielPage } from '../pages/profiel/profiel';
@@ -16,7 +15,6 @@ import { ProfielPage } from '../pages/profiel/profiel';
   declarations: [
     MyApp,
     HomePage,
-    OverzichtPage,
     PakketMakenPage,
     ReviewPage,
     ProfielPage
@@ -29,7 +27,6 @@ import { ProfielPage } from '../pages/profiel/profiel';
   entryComponents: [
     MyApp,
     HomePage,
-    OverzichtPage,
     PakketMakenPage,
     ReviewPage,
     ProfielPage

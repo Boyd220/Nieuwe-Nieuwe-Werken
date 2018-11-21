@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { OverzichtPage } from '../pages/overzicht/overzicht';
 import { PakketMakenPage } from '../pages/pakket-maken/pakket-maken';
 import { ProfielPage } from '../pages/profiel/profiel';
 import { ReviewPage } from '../pages/review/review';
@@ -28,7 +27,6 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'NNW', component: HomePage },
-      { title: 'Overzicht werkpaketten', component: OverzichtPage },
       { title: 'Werkpakket maken', component: PakketMakenPage },
       { title: 'Profiel', component: ProfielPage },
       { title: 'Bekijk je reviews', component: ReviewPage }
