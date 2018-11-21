@@ -1,5 +1,8 @@
 <ion-header>
   <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
     <ion-title>
       Het nieuwe² werken
     </ion-title>
@@ -7,16 +10,22 @@
 </ion-header>
 
 <ion-content padding>
-  Het nieuwe² werken
-  <p>
-    Omdat alles te fixen is met een app ;-)
-  </p>
-
-<h1>Werkvoorraad</h1>
-  <ion-item>
-    <ion-badge slot="start">11</ion-badge>
-    <ion-label>My Item</ion-label>
-  <ion-badge slot="end">22</ion-badge>
-</ion-item>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm border-column">
+            Het nieuwe² werken
+            <p>
+              Omdat alles te fixen is met een app ;-)
+            </p>
+          One of three columns
+        </div>
+        <div class="col-sm border-column">
+          One of three columns
+        </div>
+        <div class="col-sm border-column">
+          One of three columns
+        </div>
+      </div>
+    </div>
 
 </ion-content>
