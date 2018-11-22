@@ -6,3 +6,8 @@
     height: 100% !important;
     width: 100% !important;
 }
+
+.container-margins{
+    margin-right: 1em !important; 
+    margin-left:1em !important;
+}
