@@ -1,45 +1,1301 @@
-<ion-header>
-  <ion-navbar>
-      <button ion-button menuToggle>
-          <ion-icon name="menu"></ion-icon>
-        </button>
-    <ion-title>
-      Het nieuwe² werken
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding class="k-header--fixed k-header-mobile--fixed k-aside--enabled k-aside--fixed k-aside-secondary--enabled">
+  <div id="k_header_mobile" class="k-header-mobile  k-header-mobile--fixed ">
+    <div class="k-header-mobile__logo">
+      <a href="index.html">
+        <img alt="Logo" src="assets/custom-imgs/logo-nnw.svg" width="50" height="50"/>
+      </a>
+    </div>
+    <div class="k-header-mobile__toolbar">
+      <button class="k-header-mobile__toolbar-toggler k-header-mobile__toolbar-toggler--left" id="k_aside_mobile_toggler"><span></span></button>
+      <button class="k-header-mobile__toolbar-toggler" id="k_header_mobile_toggler"><span></span></button>
+      <button class="k-header-mobile__toolbar-topbar-toggler" id="k_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+    </div>
+  </div>
 
-<ion-content padding>
-  <div class="container">
-      <div class="row">
-        <div class="col border-column">
-            Het nieuwe² werken
-            <p>
-              Omdat alles te fixen is met een app ;-)
-            </p>
-          One of three columns
-        </div>
-        <div class="col border-column container-margins">
-            <div class="row">
-          <div class="row border-column col-md-4" style="height: 100px; width:32%; margin-right: 3px;">1 row</div>
-          
-          <div class="row border-column col-md-4" style="height: 100px; width: 32%; margin-right: 3px;">2 row</div>
+  <!-- end:: Header Mobile -->
+  <div class="k-grid k-grid--hor k-grid--root">
+    <div class="k-grid__item k-grid__item--fluid k-grid k-grid--ver k-page">
 
-          <div class="row border-column col-md-4" style="height: 100px; width: 32%; margin-right: 3px;">3 row</div>
+      <!-- begin:: Aside -->
+      <button class="k-aside-close " id="k_aside_close_btn"><i class="la la-close"></i></button>
+      <div class="k-aside  k-aside--fixed 	k-grid__item k-grid k-grid--desktop k-grid--hor-desktop" id="k_aside">
+
+        <!-- begin:: Aside -->
+        <div class="k-aside__brand	k-grid__item " id="k_aside_brand">
+          <div class="k-aside__brand-logo">
+            <a href="index.html">
+              <img alt="Logo" src="assets/custom-imgs/logo-nnw.svg" width="50" height="50" />
+            </a>
           </div>
-          <br>
-          <div class="row">
-              <div class="row border-column col-md-4" style="height: 100px; width:32%; margin-right: 3px;">4 row</div>
-              
-              <div class="row border-column col-md-4" style="height: 100px; width: 32%; margin-right: 3px;">5 row</div>
-    
-              <div class="row border-column col-md-4" style="height: 100px; width: 32%; margin-right: 3px;">6 row</div>
-              </div>
+          <div class="k-aside__brand-tools">
+            <button ion-button menuToggle class="k-aside__brand-aside-toggler k-aside__brand-aside-toggler--left" id="k_aside_toggler"><span></span></button>
+          </div>
         </div>
-        <div class="col border-column">
-          One of three columns
+
+        <!-- end:: Aside -->
+
+        <!-- begin:: Aside Menu -->
+        <div class="k-aside-menu-wrapper	k-grid__item k-grid__item--fluid" id="k_aside_menu_wrapper">
+          <div id="k_aside_menu" class="k-aside-menu " data-kmenu-vertical="1" data-kmenu-scroll="1" data-kmenu-dropdown-timeout="500">
+            <ul class="k-menu__nav ">
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- end:: Aside Menu -->
+      </div>
+
+      <!-- end:: Aside -->
+      <div class="k-grid__item k-grid__item--fluid k-grid k-grid--hor k-wrapper" id="k_wrapper">
+
+        <!-- begin:: Header -->
+        <div id="k_header" class="k-header k-grid__item  k-header--fixed ">
+
+          <!-- begin: Header Menu -->
+          <button class="k-header-menu-wrapper-close" id="k_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+          <div class="k-header-menu-wrapper" id="k_header_menu_wrapper">
+            <div id="k_header_menu" class="k-header-menu k-header-menu-mobile ">              
+            </div>
+          </div>
+
+          <!-- end: Header Menu -->
+
+          <!-- begin:: Header Topbar -->
+          <div class="k-header__topbar">
+
+            <!--begin: Search -->
+            <div class="k-header__topbar-item k-header__topbar-item--search dropdown">
+              <div class="k-header__topbar-wrapper" id="k_offcanvas_toolbar_search_toggler_btn">
+                <span class="k-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+              </div>
+            </div>
+
+            <!--end: Search -->
+
+            <!--begin: Notifications -->
+            <div class="k-header__topbar-item dropdown">
+              <div class="k-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px -2px">
+                <span class="k-header__topbar-icon"><i class="flaticon2-bell-alarm-symbol"></i></span>
+                <span class="k-badge k-badge--dot k-badge--notify k-badge--sm k-badge--light"></span>
+              </div>
+              <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
+                <div class="k-head" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+                  <h3 class="k-head__title">User Notifications</h3>
+                  <div class="k-head__sub"><span class="k-head__desc">23 new notifications</span></div>
+                </div>
+                <div class="k-notification k-margin-t-30 k-margin-b-20 k-scroll" data-scroll="true" data-height="270" data-mobile-height="220">
+                  <a href="#" class="k-notification__item">
+                    <div class="k-notification__item-icon">
+                      <i class="flaticon2-line-chart k-font-success"></i>
+                    </div>
+                    <div class="k-notification__item-details">
+                      <div class="k-notification__item-title">
+                        New order has been received
+                      </div>
+                      <div class="k-notification__item-time">
+                        2 hrs ago
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!--end: Notifications -->
+
+            <!--begin: Quick actions -->
+            <div class="k-header__topbar-item dropdown">
+              <div class="k-header__topbar-wrapper" id="k_offcanvas_toolbar_quick_actions_toggler_btn">
+                <span class="k-header__topbar-icon"><i class="flaticon2-gear"></i></span>
+              </div>
+            </div>
+
+            <!--end: Quick actions -->
+
+            <!--begin: User bar -->
+            <div class="k-header__topbar-item k-header__topbar-item--user">
+              <div class="k-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px -2px">
+                <div class="k-header__topbar-user">
+                  <span class="k-header__topbar-welcome k-hidden-mobile">Hi,</span>
+                  <span class="k-header__topbar-username k-hidden-mobile">Alex</span>
+                  <img alt="Pic" src="../assets/media/users/300_25.jpg" />
+
+                  <!--use below badge element instead the user avatar to display username's first letter(remove k-hidden class to display it) -->
+                  <span class="k-badge k-badge--username k-badge--lg k-badge--brand k-hidden">A</span>
+                </div>
+              </div>
+              <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-md">
+                <div class="k-user-card k-margin-b-50 k-margin-b-30-tablet-and-mobile" style="background-image: url(../assets/media/misc/head_bg_sm.jpg)">
+                  <div class="k-user-card__wrapper">
+                    <div class="k-user-card__pic">
+                      <img alt="Pic" src="../assets/media/users/300_21.jpg" />
+                    </div>
+                    <div class="k-user-card__details">
+                      <div class="k-user-card__name">Alex Stone</div>
+                      <div class="k-user-card__position">CTO, Loop Inc.</div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="k-nav k-margin-b-10">
+                  <li class="k-nav__item">
+                    <a href="custom_user_profile-v1.html" class="k-nav__link">
+                      <span class="k-nav__link-icon"><i class="flaticon2-calendar-3"></i></span>
+                      <span class="k-nav__link-text">My Profile</span>
+                    </a>
+                  </li>
+                  <li class="k-nav__item">
+                    <a href="custom_user_profile-v1.html" class="k-nav__link">
+                      <span class="k-nav__link-icon"><i class="flaticon2-browser-2"></i></span>
+                      <span class="k-nav__link-text">My Tasks</span>
+                    </a>
+                  </li>
+                  <li class="k-nav__item">
+                    <a href="custom_user_profile-v1.html" class="k-nav__link">
+                      <span class="k-nav__link-icon"><i class="flaticon2-mail"></i></span>
+                      <span class="k-nav__link-text">Messages</span>
+                    </a>
+                  </li>
+                  <li class="k-nav__item">
+                    <a href="custom_user_profile-v1.html" class="k-nav__link">
+                      <span class="k-nav__link-icon"><i class="flaticon2-gear"></i></span>
+                      <span class="k-nav__link-text">Settings</span>
+                    </a>
+                  </li>
+                  <li class="k-nav__item k-nav__item--custom k-margin-t-15">
+                    <a href="custom_user_login-v2.html" target="_blank" class="btn btn-outline-metal btn-hover-brand btn-upper btn-font-dark btn-sm btn-bold">Sign Out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--end: User bar -->
+
+            <!--begin: Quick panel toggler -->
+            <div class="k-header__topbar-item k-header__topbar-item--quick-panel" data-toggle="k-tooltip" title="Quick panel" data-placement="right">
+              <span class="k-header__topbar-icon" id="k_quick_panel_toggler_btn">
+                <i class="flaticon-grid-menu"></i>
+              </span>
+            </div>
+
+            <!--end: Quick panel toggler -->
+          </div>
+
+          <!-- end:: Header Topbar -->
+        </div>
+
+        <!-- end:: Header -->
+
+        <!-- begin:: Content -->
+        <div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+
+          <!-- begin:: Content Head -->
+          <div class="k-content__head	k-grid__item">
+            <div class="k-content__head-main">
+              <div class="k-content__head-breadcrumbs">
+                <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                <span class="k-content__head-breadcrumb-separator"></span>
+                <a href="" class="k-content__head-breadcrumb-link">Home</a>
+
+                <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+              </div>
+            </div>
+            <div class="k-content__head-toolbar">
+              <div class="k-content__head-wrapper">
+                <div class="dropdown dropdown-inline k-hide" data-toggle="k-tooltip" title="Quick actions" data-placement="left">
+                  <button type="button" class="btn btn-sm btn-elevate btn-danger btn-bold btn-upper dropdown-toggle-" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    New
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#"><i class="la la-plus"></i> New Report</a>
+                    <a class="dropdown-item" href="#"><i class="la la-user"></i> Add Customer</a>
+                    <a class="dropdown-item" href="#"><i class="la la-cloud-download"></i> New Download</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="la la-cog"></i> Settings</a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                  <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Vandaag</span>&nbsp;
+                  <span  class="k-font-bold" id="k_dashboard_daterangepicker_date">{{Date}}</span>
+                  <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- end:: Content Head -->
+
+          <!-- begin:: Content Body -->
+          <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+
+            <!--begin::Dashboard 5-->
+
+            <!--begin::Row-->
+            <div class="row">
+              <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet k-portlet--height-fluid">
+                  <div class="k-portlet__head">
+                    <div class="k-portlet__head-label">
+                      <h3 class="k-portlet__head-title">Werkpakketten deze week</h3>
+                    </div>
+                  </div>
+                  <div class="k-portlet__body">
+                    <div class="k-widget-1">
+                      <ul class="nav nav-pills nav-tabs-btn nav-pills-btn-brand" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#k_tabs_19_15be902d452de3" role="tab">
+                            <span class="nav-link-icon"><i class="flaticon2-graphic"></i></span>
+                            <span class="nav-link-title">Software</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#k_tabs_19_25be902d452de3" role="tab">
+                            <span class="nav-link-icon"><i class="flaticon2-position"></i></span>
+                            <span class="nav-link-title">Netwerken</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#k_tabs_19_35be902d452de3" role="tab">
+                            <span class="nav-link-icon"><i class="flaticon2-layers-1"></i></span>
+                            <span class="nav-link-title">Onderhoud</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane fade active show" id="k_tabs_19_15be902d452de3" role="tabpanel">
+                          <div class="k-widget-1__item">
+                            <div class="k-widget-1__item-info">
+                              <a href="#" class="k-widget-1__item-title">
+                                NNW: Filterfunctie uitbreiden
+                              </a>
+                              <div class="k-widget-1__item-desc">Let op bestaande filters en gebruik deze....</div>
+                            </div>
+                            <div class="k-widget-1__item-stats">
+                              <div class="k-widget-1__item-value">2 / 8 uur</div>
+                              <div class="k-widget-1__item-progress">
+                                <div class="progress">
+                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-1__item">
+                            <div class="k-widget-1__item-info">
+                              <a href="#" class="k-widget-1__item-title">
+                               NNW: Inline CSS verplaatsen naar CSS files
+                              </a>
+                              <div class="k-widget-1__item-desc">Loop applicatie per pagina door...</div>
+                            </div>
+                            <div class="k-widget-1__item-stats">
+                              <div class="k-widget-1__item-value">0 / 8 uur</div>
+                              <div class="k-widget-1__item-progress">
+                                <div class="progress">
+                                  <div class="progress-bar bg-brand" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-1__item">
+                            <div class="k-widget-1__item-info">
+                              <a href="#" class="k-widget-1__item-title">Blockchain: handtekening</a>
+                              <div class="k-widget-1__item-desc">Doe ideeën op hoe je een handteken...</div>
+                            </div>
+                            <div class="k-widget-1__item-stats">
+                              <div class="k-widget-1__item-value">9 / 20 uur</div>
+                              <div class="k-widget-1__item-progress">
+                                <div class="progress">
+                                  <div class="progress-bar  bg-success" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-1__item">
+                            <div class="k-widget-1__item-info">
+                              <a href="#" class="k-widget-1__item-title">Blockchain: UI/UX Design</a>
+                              <div class="k-widget-1__item-desc">Maak schets van de UI</div>
+                            </div>
+                            <div class="k-widget-1__item-stats">
+                              <div class="k-widget-1__item-value">2 / 12 uur</div>
+                              <div class="k-widget-1__item-progress">
+                                <div class="progress">
+                                  <div class="progress-bar bg-focus" role="progressbar" style="width: 16.66%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-1__item">
+                            <div class="k-widget-1__item-info">
+                              <a href="#" class="k-widget-1__item-title">Machine learning</a>
+                              <div class="k-widget-1__item-desc">Volg een tutorial op udemy</div>
+                            </div>
+                            <div class="k-widget-1__item-stats">
+                              <div class="k-widget-1__item-value">8 / 60 uur</div>
+                              <div class="k-widget-1__item-progress">
+                                <div class="progress">
+                                  <div class="progress-bar bg-warning" role="progressbar" style="width: 13.3%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--end::Portlet-->
+              </div>
+              <div class="col-lg-6 col-xl-4 order-lg-1 order-xl-1">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet k-portlet--height-fluid">
+                  <div class="k-portlet__head">
+                    <div class="k-portlet__head-label">
+                      <h3 class="k-portlet__head-title">Top Categories</h3>
+                    </div>
+                    <div class="k-portlet__head-toolbar">
+                      <div class="k-portlet__head-toolbar-wrapper">
+                        <div class="dropdown dropdown-inline">
+                          <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="flaticon-more-1"></i>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <ul class="k-nav">
+                              <li class="k-nav__section k-nav__section--first">
+                                <span class="k-nav__section-text">Export Tools</span>
+                              </li>
+                              <li class="k-nav__item">
+                                <a href="#" class="k-nav__link">
+                                  <i class="k-nav__link-icon la la-print"></i>
+                                  <span class="k-nav__link-text">Print</span>
+                                </a>
+                              </li>
+                              <li class="k-nav__item">
+                                <a href="#" class="k-nav__link">
+                                  <i class="k-nav__link-icon la la-copy"></i>
+                                  <span class="k-nav__link-text">Copy</span>
+                                </a>
+                              </li>
+                              <li class="k-nav__item">
+                                <a href="#" class="k-nav__link">
+                                  <i class="k-nav__link-icon la la-file-excel-o"></i>
+                                  <span class="k-nav__link-text">Excel</span>
+                                </a>
+                              </li>
+                              <li class="k-nav__item">
+                                <a href="#" class="k-nav__link">
+                                  <i class="k-nav__link-icon la la-file-text-o"></i>
+                                  <span class="k-nav__link-text">CSV</span>
+                                </a>
+                              </li>
+                              <li class="k-nav__item">
+                                <a href="#" class="k-nav__link">
+                                  <i class="k-nav__link-icon la la-file-pdf-o"></i>
+                                  <span class="k-nav__link-text">PDF</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="k-portlet__body">
+                    <div class="k-widget-16">
+                      <div class="k-widget-16__item k-widget-16__item--info">
+                        <div class="k-widget-16__labels">
+                          <a href="">
+                            <div class="k-widget-16__title">Templates</div>
+                          </a>
+                          <div class="k-widget-16__desc">Front-end, Admin</div>
+                        </div>
+                        <div class="k-widget-16__data">
+                          <div class="k-widget-16__item-chart">
+
+                            <!--Doc: For the chart initialization refer to "latestProductsMiniCharts" function in "src\theme\app\scripts\custom\dashboard.js"
+                       and "KLib.initMiniChart()" function in "themes/themes/keen/src/theme/app/scripts/bundle/lib.js" -->
+                            <canvas id="k_widget_latest_products_chart_1" width="80" height="40"></canvas>
+                          </div>
+                          <div class="k-widget-16__numbers">
+                            <div class="k-widget-16__numbers-total">5.7k</div>
+                            <div class="k-widget-16__numbers-change">+780</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="k-widget-16__item k-widget-16__item--danger">
+                        <div class="k-widget-16__labels">
+                          <a href="">
+                            <div class="k-widget-16__title">Wordpress</div>
+                          </a>
+                          <div class="k-widget-16__desc">eCommerce, Website</div>
+                        </div>
+                        <div class="k-widget-16__data">
+                          <div class="k-widget-16__item-chart">
+
+                            <!--Doc: For the chart initialization refer to "latestProductsMiniCharts" function in "src\theme\app\scripts\custom\dashboard.js"
+                       and "KLib.initMiniChart()" function in "themes/themes/keen/src/theme/app/scripts/bundle/lib.js" -->
+                            <canvas id="k_widget_latest_products_chart_6" width="80" height="40"></canvas>
+                          </div>
+                          <div class="k-widget-16__numbers">
+                            <div class="k-widget-16__numbers-total">2.8k</div>
+                            <div class="k-widget-16__numbers-change">+350</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="k-widget-16__item k-widget-16__item--warning">
+                        <div class="k-widget-16__labels">
+                          <a href="">
+                            <div class="k-widget-16__title">eCommerce</div>
+                          </a>
+                          <div class="k-widget-16__desc">Fashion Websites</div>
+                        </div>
+                        <div class="k-widget-16__data">
+                          <div class="k-widget-16__item-chart">
+
+                            <!--Doc: For the chart initialization refer to "latestProductsMiniCharts" function in "src\theme\app\scripts\custom\dashboard.js"
+                       and "KLib.initMiniChart()" function in "themes/themes/keen/src/theme/app/scripts/bundle/lib.js" -->
+                            <canvas id="k_widget_latest_products_chart_3" width="80" height="40"></canvas>
+                          </div>
+                          <div class="k-widget-16__numbers">
+                            <div class="k-widget-16__numbers-total">9.3k</div>
+                            <div class="k-widget-16__numbers-change">+2.1k</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="k-widget-16__item k-widget-16__item--brand">
+                        <div class="k-widget-16__labels">
+                          <a href="">
+                            <div class="k-widget-16__title">UI/UX Design</div>
+                          </a>
+                          <div class="k-widget-16__desc">Everything you like</div>
+                        </div>
+                        <div class="k-widget-16__data">
+                          <div class="k-widget-16__item-chart">
+
+                            <!--Doc: For the chart initialization refer to "latestProductsMiniCharts" function in "src\theme\app\scripts\custom\dashboard.js"
+                       and "KLib.initMiniChart()" function in "themes/themes/keen/src/theme/app/scripts/bundle/lib.js" -->
+                            <canvas id="k_widget_latest_products_chart_5" width="80" height="40"></canvas>
+                          </div>
+                          <div class="k-widget-16__numbers">
+                            <div class="k-widget-16__numbers-total">9.3k</div>
+                            <div class="k-widget-16__numbers-change">+1.6k</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="k-widget-16__item k-widget-16__item--success">
+                        <div class="k-widget-16__labels">
+                          <a href="">
+                            <div class="k-widget-16__title">SAAS Solution</div>
+                          </a>
+                          <div class="k-widget-16__desc">Monthly Subscription</div>
+                        </div>
+                        <div class="k-widget-16__data">
+                          <div class="k-widget-16__item-chart">
+
+                            <!--Doc: For the chart initialization refer to "latestProductsMiniCharts" function in "src\theme\app\scripts\custom\dashboard.js"
+                       and "KLib.initMiniChart()" function in "themes/themes/keen/src/theme/app/scripts/bundle/lib.js" -->
+                            <canvas id="k_widget_latest_products_chart_4" width="80" height="40"></canvas>
+                          </div>
+                          <div class="k-widget-16__numbers">
+                            <div class="k-widget-16__numbers-total">5.7k</div>
+                            <div class="k-widget-16__numbers-change">+598</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--end::Portlet-->
+              </div>
+              <div class="col-lg-12 col-xl-8 order-lg-2 order-xl-1">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet k-portlet--height-fluid-half k-widget-14">
+                  <div class="k-portlet__body">
+
+                    <!-- Doc: The bootstrap carousel is a slideshow for cycling through a series of content, see https://getbootstrap.com/docs/4.1/components/carousel/ -->
+                    <div id="k-widget-slider-14-1" class="k-slider carousel slide" data-ride="carousel" data-interval="8000">
+                      <div class="k-slider__head">
+                        <div class="k-slider__label">New Products</div>
+                        <div class="k-slider__nav">
+                          <a class="k-slider__nav-prev carousel-control-prev" href="#k-widget-slider-14-1" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                          </a>
+                          <a class="k-slider__nav-next carousel-control-next" href="#k-widget-slider-14-1" role="button" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="k-widget-14__body">
+                            <div class="k-widget-14__product">
+                              <div class="k-widget-14__thumb">
+                                <a href="#"><img src="../assets/media/blog/1.jpg" class="k-widget-14__image--landscape" alt="" title="" /></a>
+                              </div>
+                              <div class="k-widget-14__content">
+                                <a href="#">
+                                  <h3 class="k-widget-14__title">Active Smartwatch</h3>
+                                </a>
+                                <div class="k-widget-14__desc">
+                                  Beautifully designed watch that helps you track your fitness and diet – while keeping you motivated!
+                                </div>
+                              </div>
+                            </div>
+                            <div class="k-widget-14__data">
+                              <div class="k-widget-14__info">
+                                <div class="k-widget-14__info-title k-font-brand">246</div>
+                                <div class="k-widget-14__desc">Purchases</div>
+                              </div>
+                              <div class="k-widget-14__info">
+                                <div class="k-widget-14__info-title">37</div>
+                                <div class="k-widget-14__desc">Reviews</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-14__foot">
+                            <div class="k-widget-14__foot-info">
+                              <div class="k-widget-14__foot-label btn btn-sm btn-label-brand btn-bold">
+                                24 Nov, 2018
+                              </div>
+                              <div class="k-widget-14__foot-desc">Date of Release</div>
+                            </div>
+                            <div class="k-widget-14__foot-toolbar">
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Preview</a>
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Details</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="k-widget-14__body">
+                            <div class="k-widget-14__product">
+                              <div class="k-widget-14__thumb">
+                                <a href="#"><img src="../assets/media/blog/2.jpg" class="k-widget-14__image--landscape" alt="" title="" /></a>
+                              </div>
+                              <div class="k-widget-14__content">
+                                <a href="#">
+                                  <h3 class="k-widget-14__title">DSLR Lens</h3>
+                                </a>
+                                <div class="k-widget-14__desc">
+                                  Wide-angle, Quick Focus. Emphasis is on modern lenses for 35 mm film SLRs and for DSLRs with sensor sizes less than or equal to 35 mm.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="k-widget-14__data">
+                              <div class="k-widget-14__info">
+                                <div class="k-widget-14__info-title k-font-brand">142</div>
+                                <div class="k-widget-14__desc">Purchases</div>
+                              </div>
+                              <div class="k-widget-14__info">
+                                <div class="k-widget-14__info-title">25</div>
+                                <div class="k-widget-14__desc">Reviews</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-14__foot">
+                            <div class="k-widget-14__foot-info">
+                              <div class="k-widget-14__foot-label btn btn-sm btn-label-brand btn-bold">
+                                24 Nov, 2018
+                              </div>
+                              <div class="k-widget-14__foot-desc">Date of Release</div>
+                            </div>
+                            <div class="k-widget-14__foot-toolbar">
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Preview</a>
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Details</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="k-widget-14__body">
+                            <div class="k-widget-14__product">
+                              <div class="k-widget-14__thumb">
+                                <a href="#"><img src="../assets/media/blog/4.jpg" class="k-widget-14__image--landscape" alt="" title="" /></a>
+                              </div>
+                              <div class="k-widget-14__content">
+                                <a href="#">
+                                  <h3 class="k-widget-14__title">Polaroid Camera</h3>
+                                </a>
+                                <div class="k-widget-14__desc">
+                                  Instant is back! Make photos fun again with the new range of Polaroid Instant Cameras with Vintage Effects and Built in Flash
+                                </div>
+                              </div>
+                            </div>
+                            <div class="k-widget-14__data">
+                              <div class="k-widget-14__info">
+                                <div class="k-widget-14__info-title k-font-brand">3578</div>
+                                <div class="k-widget-14__desc">Purchases</div>
+                              </div>
+                              <div class="k-widget-14__info">
+                                <div class="k-widget-14__info-title">457</div>
+                                <div class="k-widget-14__desc">Reviews</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-14__foot">
+                            <div class="k-widget-14__foot-info">
+                              <div class="k-widget-14__foot-label btn btn-sm btn-label-brand btn-bold">
+                                24 Nov, 2018
+                              </div>
+                              <div class="k-widget-14__foot-desc">Date of Release</div>
+                            </div>
+                            <div class="k-widget-14__foot-toolbar">
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Preview</a>
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Details</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--end::Portlet-->
+
+                <!--begin::Portlet-->
+                <div class="k-portlet k-portlet--height-fluid-half k-widget-15">
+                  <div class="k-portlet__body">
+
+                    <!-- Doc: The bootstrap carousel is a slideshow for cycling through a series of content, see https://getbootstrap.com/docs/4.1/components/carousel/ -->
+                    <div id="k-widget-slider-14-2" class="k-slider carousel slide" data-ride="carousel" data-interval="8000">
+                      <div class="k-slider__head">
+                        <div class="k-slider__label">New Authors</div>
+                        <div class="k-slider__nav">
+                          <a class="k-slider__nav-prev carousel-control-prev" href="#k-widget-slider-14-2" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                          </a>
+                          <a class="k-slider__nav-next carousel-control-next" href="#k-widget-slider-14-2" role="button" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="k-widget-15__body">
+                            <div class="k-widget-15__author">
+                              <div class="k-widget-15__photo">
+                                <a href="#"><img src="../assets/media/users/100_14.jpg" alt="" title="" /></a>
+                              </div>
+                              <div class="k-widget-15__detail">
+                                <a href="#" class="k-widget-15__name">Andy John</a>
+                                <div class="k-widget-15__desc">
+                                  AngularJS Expert
+                                </div>
+                              </div>
+                            </div>
+                            <div class="k-widget-15__wrapper">
+                              <div class="k-widget-15__info">
+                                <a href="#" class="btn btn-icon btn-sm btn-circle btn-success"><i class="fa fa-envelope"></i></a>
+                                <a href="#" class="k-widget-15__info--item">sale@boatline.com</a>
+                              </div>
+                              <div class="k-widget-15__info">
+                                <a href="#" class="btn btn-icon btn-sm btn-circle btn-brand"><i class="fa fa-phone"></i></a>
+                                <a href="#" class="k-widget-15__info--item">(+44) 345 345 4705</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-15__foot">
+                            <div class="k-widget-15__foot-info">
+                              <div class="k-widget-15__foot-label btn btn-sm btn-label-brand btn-bold">
+                                01 Sep, 2018
+                              </div>
+                              <div class="k-widget-15__foot-desc">Joined Date</div>
+                            </div>
+                            <div class="k-widget-15__foot-toolbar">
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Message</a>
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Profile</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="k-widget-15__body">
+                            <div class="k-widget-15__author">
+                              <div class="k-widget-15__photo">
+                                <a href="#"><img src="../assets/media/users/100_3.jpg" alt="" title="" /></a>
+                              </div>
+                              <div class="k-widget-15__detail">
+                                <a href="#" class="k-widget-15__name">Patrick Smith</a>
+                                <div class="k-widget-15__desc">
+                                  ReactJS Expert
+                                </div>
+                              </div>
+                            </div>
+                            <div class="k-widget-15__wrapper">
+                              <div class="k-widget-15__info">
+                                <a href="#" class="btn btn-icon btn-sm btn-circle btn-success"><i class="fa fa-envelope"></i></a>
+                                <a href="#" class="k-widget-15__info--item">patrick@boatline.com</a>
+                              </div>
+                              <div class="k-widget-15__info">
+                                <a href="#" class="btn btn-icon btn-sm btn-circle btn-brand"><i class="fa fa-phone"></i></a>
+                                <a href="#" class="k-widget-15__info--item">(+44) 345 345 5574</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-15__foot">
+                            <div class="k-widget-15__foot-info">
+                              <div class="k-widget-15__foot-label btn btn-sm btn-label-brand btn-bold">
+                                01 Sep, 2018
+                              </div>
+                              <div class="k-widget-15__foot-desc">Joined Date</div>
+                            </div>
+                            <div class="k-widget-15__foot-toolbar">
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Message</a>
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Profile</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="k-widget-15__body">
+                            <div class="k-widget-15__author">
+                              <div class="k-widget-15__photo">
+                                <a href="#"><img src="../assets/media/users/100_7.jpg" alt="" title="" /></a>
+                              </div>
+                              <div class="k-widget-15__detail">
+                                <a href="#" class="k-widget-15__name">Amanda Collin</a>
+                                <div class="k-widget-15__desc">
+                                  Project Manager
+                                </div>
+                              </div>
+                            </div>
+                            <div class="k-widget-15__wrapper">
+                              <div class="k-widget-15__info">
+                                <a href="#" class="btn btn-icon btn-sm btn-circle btn-success"><i class="fa fa-envelope"></i></a>
+                                <a href="#" class="k-widget-15__info--item">amanda@boatline.com</a>
+                              </div>
+                              <div class="k-widget-15__info">
+                                <a href="#" class="btn btn-icon btn-sm btn-circle btn-brand"><i class="fa fa-phone"></i></a>
+                                <a href="#" class="k-widget-15__info--item">(+44) 345 345 1247</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-15__foot">
+                            <div class="k-widget-15__foot-info">
+                              <div class="k-widget-15__foot-label btn btn-sm btn-label-brand btn-bold">
+                                01 Sep, 2018
+                              </div>
+                              <div class="k-widget-15__foot-desc">Joined Date</div>
+                            </div>
+                            <div class="k-widget-15__foot-toolbar">
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Message</a>
+                              <a href="#" class="btn btn-default btn-sm btn-bold btn-upper">Profile</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--end::Portlet-->
+              </div>
+              <div class="col-lg-12 col-xl-4 order-lg-2 order-xl-1">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet k-portlet--tabs k-portlet--height-fluid">
+                  <div class="k-portlet__head">
+                    <div class="k-portlet__head-label">
+                      <h3 class="k-portlet__head-title">
+                        Work Progress
+                      </h3>
+                    </div>
+                    <div class="k-portlet__head-toolbar">
+                      <ul class="nav nav-tabs nav-tabs-line nav-tabs-line-brand nav-tabs-bold" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active show" data-toggle="tab" href="#k_portlet_tabs_1111_1_content" role="tab" aria-selected="false">
+                            Emails
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#k_portlet_tabs_1111_2_content" role="tab" aria-selected="false">
+                            Tickets
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="k-portlet__body">
+                    <div class="tab-content">
+                      <div class="tab-pane fade active show" id="k_portlet_tabs_1111_1_content" role="tabpanel">
+                        <div class="k-widget-11">
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                Pendings Tasks
+                              </div>
+                              <div class="k-widget-11__value">
+                                78%
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                Completed Tasks
+                              </div>
+                              <div class="k-widget-11__value">
+                                320&nbsp;/&nbsp;<span class="k-opacity-5">780</span>
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                Tasks In Progress
+                              </div>
+                              <div class="k-widget-11__value">
+                                45%
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                All Tasks
+                              </div>
+                              <div class="k-widget-11__value">
+                                1200
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                Reports
+                              </div>
+                              <div class="k-widget-11__value">
+                                40
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="k-margin-t-30 k-align-center">
+                          <a href="#" class="btn btn-brand btn-upper btn-bold k-align-center">Full Report</a>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="k_portlet_tabs_1111_2_content" role="tabpanel">
+                        <div class="k-widget-11">
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                Pendings Tasks
+                              </div>
+                              <div class="k-widget-11__value">
+                                78%
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                Completed Tasks
+                              </div>
+                              <div class="k-widget-11__value">
+                                320&nbsp;/&nbsp;<span class="k-opacity-5">780</span>
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                Tasks In Progress
+                              </div>
+                              <div class="k-widget-11__value">
+                                45%
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                All Tasks
+                              </div>
+                              <div class="k-widget-11__value">
+                                1200
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="k-widget-11__item">
+                            <div class="k-widget-11__wrapper">
+                              <div class="k-widget-11__title">
+                                Reports
+                              </div>
+                              <div class="k-widget-11__value">
+                                40
+                              </div>
+                            </div>
+                            <div class="k-widget-11__progress">
+                              <div class="progress">
+
+                                <!-- Doc: A bootstrap progress bar can be used to show a user how far along it's in a process, see https://getbootstrap.com/docs/4.1/components/progress/ -->
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="k-margin-t-30 k-align-center">
+                          <a href="#" class="btn btn-brand btn-upper btn-bold k-align-center">Full Report</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--end::Portlet-->
+              </div>
+              <div class="col-lg-12 col-xl-8 order-lg-2 order-xl-1">
+
+                <!--begin::Portlet-->
+                <div class="k-portlet k-portlet--height-fluid">
+                  <div class="k-portlet__head k-portlet__head--lg k-portlet__head--noborder k-portlet__head--break-sm">
+                    <div class="k-portlet__head-label">
+                      <h3 class="k-portlet__head-title">Recent Orders <small>32500 total</small></h3>
+                    </div>
+                    <div class="k-portlet__head-toolbar">
+                      <div class="k-portlet__head-wrapper k-form">
+                        <div class="k-form__group k-form__group--inline k-margin-r-10">
+                          <div class="k-form__label">Sort By:</div>
+                          <div class="k-form__control" style="width: 160px;">
+                            <select class="form-control bootstrap-select" id="k_form_status" title="Status">
+                              <option value="1">Pending</option>
+                              <option value="2">Delivered</option>
+                              <option value="3">Canceled</option>
+                              <option value="4">Success</option>
+                              <option value="5">Info</option>
+                              <option value="6">Danger</option>
+                            </select>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-brand btn-upper btn-bold">New Record</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="k-portlet__body k-portlet__body--fit">
+
+                    <!--Doc: For the datatable initialization refer to "recentOrdersInit" function in "src\theme\app\scripts\custom\dashboard.js" -->
+                    <div class="k-datatable" id="k_recent_orders"></div>
+                  </div>
+                </div>
+
+                <!--end::Portlet-->
+              </div>
+            </div>
+
+            <!--end::Row-->
+
+            <!--end::Dashboard 5-->
+          </div>
+
+          <!-- end:: Content Body -->
+        </div>
+
+        <!-- end:: Content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- end:: Page -->
+
+  <!-- begin:: Topbar Offcanvas Panels -->
+
+  <!-- begin::Offcanvas Toolbar Search -->
+  <div id="k_offcanvas_toolbar_search" class="k-offcanvas-panel">
+    <div class="k-offcanvas-panel__head">
+      <h3 class="k-offcanvas-panel__title">
+        Search
+      </h3>
+      <a href="#" class="k-offcanvas-panel__close" id="k_offcanvas_toolbar_search_close"><i class="flaticon2-delete"></i></a>
+    </div>
+    <div class="k-offcanvas-panel__body">
+      <div class="k-search">
+        <div class="k-search__form">
+          <form action="#" method="get">
+            <input type="text" name="query" class="form-control" placeholder="Type here...">
+          </form>
+        </div>
+        <div class="k-search__result">
+          <div class="k-search__section">
+            Documents
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-img k-search__item-img--file">
+              <img src="../assets/media/files/doc.svg" alt="" />
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                AirPlus Requirements
+              </a>
+              <div class="k-search__item-desc">
+                by Grog John
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-img k-search__item-img--file">
+              <img src="../assets/media/files/pdf.svg" alt="" />
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                TechNav Documentation
+              </a>
+              <div class="k-search__item-desc">
+                by Mary Broun
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-img k-search__item-img--file">
+              <img src="../assets/media/files/zip.svg" alt="" />
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                All Framework Docs
+              </a>
+              <div class="k-search__item-desc">
+                by Grog John
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-img k-search__item-img--file">
+              <img src="../assets/media/files/xml.svg" alt="" />
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                AirPlus Requirements
+              </a>
+              <div class="k-search__item-desc">
+                by Grog John
+              </div>
+            </div>
+          </div>
+          <div class="k-search__section">
+            Members
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-img">
+              <img src="../assets/media/users/300_14.jpg" alt="" />
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                Jimmy Curry
+              </a>
+              <div class="k-search__item-desc">
+                Software Developer
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-img">
+              <img src="../assets/media/users/300_20.jpg" alt="" />
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                Milena Gibson
+              </a>
+              <div class="k-search__item-desc">
+                UI Designer
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-img">
+              <img src="../assets/media/users/300_21.jpg" alt="" />
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                Stefan JohnStefan
+              </a>
+              <div class="k-search__item-desc">
+                Marketing Manager
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-img">
+              <img src="../assets/media/users/300_2.jpg" alt="" />
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                Anna Strong
+              </a>
+              <div class="k-search__item-desc">
+                Software Developer
+              </div>
+            </div>
+          </div>
+          <div class="k-search__section">
+            Files
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-icon">
+              <i class="flaticon2-box k-font-danger"></i>
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                2 New items submitted
+              </a>
+              <div class="k-search__item-desc">
+                Marketing Manager
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-icon">
+              <i class="flaticon-psd k-font-brand"></i>
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                79 PSD files generated
+              </a>
+              <div class="k-search__item-desc">
+                by Grog John
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-icon">
+              <i class="flaticon2-supermarket k-font-warning"></i>
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                $2900 worth products sold
+              </a>
+              <div class="k-search__item-desc">
+                Total 234 items
+              </div>
+            </div>
+          </div>
+          <div class="k-search__item">
+            <div class="k-search__item-icon">
+              <i class="flaticon-safe-shield-protection k-font-info"></i>
+            </div>
+            <div class="k-search__item-wrapper">
+              <a href="#" class="k-search__item-title">
+                4 New items submitted
+              </a>
+              <div class="k-search__item-desc">
+                Marketing Manager
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- end::Offcanvas Toolbar Search -->
+
+  <!-- begin::Offcanvas Toolbar Quick Actions -->
+  <div id="k_offcanvas_toolbar_quick_actions" class="k-offcanvas-panel">
+    <div class="k-offcanvas-panel__head">
+      <h3 class="k-offcanvas-panel__title">
+        Quick Actions
+      </h3>
+      <a href="#" class="k-offcanvas-panel__close" id="k_offcanvas_toolbar_quick_actions_close"><i class="flaticon2-delete"></i></a>
+    </div>
+    <div class="k-offcanvas-panel__body">
+      <div class="k-grid-nav-v2">
+        <a href="#" class="k-grid-nav-v2__item">
+          <div class="k-grid-nav-v2__item-icon"><i class="flaticon2-box"></i></div>
+          <div class="k-grid-nav-v2__item-title">Orders</div>
+        </a>
+        <a href="#" class="k-grid-nav-v2__item">
+          <div class="k-grid-nav-v2__item-icon"><i class="flaticon-download-1"></i></div>
+          <div class="k-grid-nav-v2__item-title">Uploades</div>
+        </a>
+        <a href="#" class="k-grid-nav-v2__item">
+          <div class="k-grid-nav-v2__item-icon"><i class="flaticon2-supermarket"></i></div>
+          <div class="k-grid-nav-v2__item-title">Products</div>
+        </a>
+        <a href="#" class="k-grid-nav-v2__item">
+          <div class="k-grid-nav-v2__item-icon"><i class="flaticon2-avatar"></i></div>
+          <div class="k-grid-nav-v2__item-title">Customers</div>
+        </a>
+        <a href="#" class="k-grid-nav-v2__item">
+          <div class="k-grid-nav-v2__item-icon"><i class="flaticon2-list"></i></div>
+          <div class="k-grid-nav-v2__item-title">Blog Posts</div>
+        </a>
+        <a href="#" class="k-grid-nav-v2__item">
+          <div class="k-grid-nav-v2__item-icon"><i class="flaticon2-settings"></i></div>
+          <div class="k-grid-nav-v2__item-title">Settings</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- end::Offcanvas Toolbar Quick Actions -->
+
+  <!-- end:: Topbar Offcanvas Panels -->  
+
+  <!-- begin::Scrolltop -->
+  <div id="k_scrolltop" class="k-scrolltop">
+    <i class="la la-arrow-up"></i>
+  </div>
+
+  <!-- end::Scrolltop -->
 </ion-content>
