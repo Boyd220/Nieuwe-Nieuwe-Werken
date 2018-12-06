@@ -27,7 +27,6 @@ export class HomePage {
     var d4 = (jd+31741-(jd%7))%146097%36524%1461;
     var L = Math.floor(d4/1460);
     var d1 = ((d4-L)%365)+L;
-    console.log((Math.floor(d1/7) + 1).toString())
     return (Math.floor(d1/7) + 1).toString();        
 }
 
