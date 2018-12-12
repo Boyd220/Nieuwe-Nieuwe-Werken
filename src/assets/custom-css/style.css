@@ -48,3 +48,15 @@
   left: initial;
   font-size: 14px;
 }
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  color: white !important;  
+
+}

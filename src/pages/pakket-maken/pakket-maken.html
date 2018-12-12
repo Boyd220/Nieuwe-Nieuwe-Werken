@@ -1,20 +1,296 @@
-<!--
-  Generated template for the PakketMakenPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-  <ion-navbar>
-      <button ion-button menuToggle>
-          <ion-icon name="menu"></ion-icon>
-        </button>
-    <ion-title>PakketMaken</ion-title>
-  </ion-navbar>
+  <ion-content padding class="k-header--fixed k-header-mobile--fixed k-aside--disabled k-aside--fixed k-aside-secondary--disabled">
+      <div id="k_header_mobile" class="k-header-mobile  k-header-mobile--fixed ">
+        <div class="k-header-mobile__logo">
+          <a href="index.html">
+            <img alt="Logo" src="assets/custom-imgs/logo-nnw.svg" width="50" height="50"/>
+          </a>
+        </div>
+        <div class="k-header-mobile__toolbar">
+          <button class="k-header-mobile__toolbar-toggler k-header-mobile__toolbar-toggler--left" id="k_aside_mobile_toggler"><span></span></button>
+          <button class="k-header-mobile__toolbar-toggler" id="k_header_mobile_toggler"><span></span></button>
+          <button class="k-header-mobile__toolbar-topbar-toggler" id="k_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+        </div>
+      </div>
+  
+      <!-- end:: Header Mobile -->
+      <div class="k-grid k-grid--hor k-grid--root">
+        <div class="k-grid__item k-grid__item--fluid k-grid k-grid--ver k-page">
+  
+          <!-- begin:: Aside -->
+          <button class="k-aside-close " id="k_aside_close_btn"><i class="la la-close"></i></button>
+          <div class="k-aside  k-aside--fixed 	k-grid__item k-grid k-grid--desktop k-grid--hor-desktop" id="k_aside">
+  
+            <!-- begin:: Aside -->
+            <div class="k-aside__brand	k-grid__item " id="k_aside_brand">
+              <div class="k-aside__brand-logo">
+                <a href="index.html">
+                  <img alt="Logo" src="assets/custom-imgs/logo-nnw.svg" width="50" height="50" />
+                </a>
+              </div>
+              <div class="k-aside__brand-tools">
+                <button ion-button menuToggle class="k-aside__brand-aside-toggler k-aside__brand-aside-toggler--left" id="k_aside_toggler"><span></span></button>
+              </div>
+            </div>
+  
+            <!-- end:: Aside -->
+  
+            <!-- begin:: Aside Menu -->
+            <div class="k-aside-menu-wrapper	k-grid__item k-grid__item--fluid" id="k_aside_menu_wrapper">
+              <div id="k_aside_menu" class="k-aside-menu " data-kmenu-vertical="1" data-kmenu-scroll="1" data-kmenu-dropdown-timeout="500">
+                  <button type="button" style="margin-left: 7em;" class="btn btn-primary center-img">Terug naar overzicht</button>
+              </div>
+            </div>
+  
+            <!-- end:: Aside Menu -->
+          </div>
+  
+          <!-- end:: Aside -->
+          <div class="k-grid__item k-grid__item--fluid k-grid k-grid--hor k-wrapper" id="k_wrapper">
+  
+            <!-- begin:: Header -->
+            <div id="k_header" class="k-header k-grid__item  k-header--fixed ">
+  
+              <!-- begin: Header Menu -->
+              <button class="k-header-menu-wrapper-close" id="k_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+              <div class="k-header-menu-wrapper" id="k_header_menu_wrapper">
+                <div id="k_header_menu" class="k-header-menu k-header-menu-mobile ">              
+                </div>
+              </div>
+  
+              <!-- end: Header Menu -->
+  
+              <!-- begin:: Header Topbar -->
+              <div class="k-header__topbar">
+  
+                <!--begin: Search -->
+                <div class="k-header__topbar-item k-header__topbar-item--search dropdown">
+                  <div class="k-header__topbar-wrapper" id="k_offcanvas_toolbar_search_toggler_btn">
+                    <span class="k-header__topbar-icon"><i class="flaticon2-search-1"></i></span>
+                  </div>
+                </div>
+  
+                <!--end: Search -->
+  
+                <!--begin: Notifications -->
+                <div class="k-header__topbar-item dropdown">
+                  <div class="k-header__topbar-wrapper" data-toggle="dropdown" data-offset="30px -2px">
+                    <span class="k-header__topbar-icon"><i class="flaticon2-bell-alarm-symbol"></i></span>
+                    <span class="k-badge k-badge--dot k-badge--notify k-badge--sm k-badge--light"></span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-top-unround dropdown-menu-xl">
+  
+                  </div>
+                </div>
+  
+                <!--end: Notifications -->
+  
+                <!--begin: User bar -->
+                <div class="k-header__topbar-item k-header__topbar-item--user">
+                  <div class="k-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px -2px">
+                    <div class="k-header__topbar-user">
+                      <span class="k-header__topbar-welcome k-hidden-mobile">Hi,</span>
+                      <span class="k-header__topbar-username k-hidden-mobile">Alex</span>
+                      <img alt="Pic" src="../assets/media/users/300_25.jpg" />
+                    </div>
+                  </div>
+                </div>
+  
+                <!--end: User bar -->
+              </div>
+  
+              <!-- end:: Header Topbar -->
+            </div>
+  
+            <!-- end:: Header -->
+  
+            <!-- begin:: Content -->
+            <div class="k-content	k-grid__item k-grid__item--fluid k-grid k-grid--hor" id="k_content">
+  
+              <!-- begin:: Content Head -->
+              <div class="k-content__head	k-grid__item">
+                <div class="k-content__head-main">
+                  <div class="k-content__head-breadcrumbs">
+                    <a href="#" class="k-content__head-breadcrumb-home"><i class="flaticon2-shelter"></i></a>
+                    <span class="k-content__head-breadcrumb-separator"></span>
+                    <a href="" class="k-content__head-breadcrumb-link">Home</a>
+                    <span class="k-content__head-breadcrumb-separator"></span>
+                    <a href="" class="k-content__head-breadcrumb-link">Werkpakket maken</a>
+                    <!-- <span class="k-content__head-breadcrumb-link k-content__head-breadcrumb-link--active">Active link</span> -->
+                  </div>
+                </div>
+                <div class="k-content__head-toolbar">
+                  <div class="k-content__head-wrapper">
+                    <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                      <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Vandaag</span>&nbsp;
+                      <span  class="k-font-bold" id="k_dashboard_daterangepicker_date">{{Date}}</span>
+                      <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-elevate btn-brand" id="k_dashboard_daterangepicker" data-toggle="k-tooltip" title="Select dashboard daterange" data-placement="left">
+                      <span class="k-opacity-7" id="k_dashboard_daterangepicker_title">Weeknummer:</span>&nbsp;
+                      <span  class="k-font-bold" id="k_dashboard_daterangepicker_date">{{Weeknumber}}</span>
+                      <i class="flaticon-calendar-with-a-clock-time-tools k-padding-l-5 k-padding-r-0"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- end:: Content Head -->
+  
+              <!-- begin:: Content Body -->
+              <div class="k-content__body	k-grid__item k-grid__item--fluid" id="k_content_body">
+  
+                <!--begin::Dashboard 5-->
+  
+                <!--begin::Row-->
+                <div class="row">
+                  <div class="col-lg-12 col-xl-4 order-lg-1 order-xl-1" id="werkpakket-wrapper">
+  
+                    <!--begin::Portlet-->
+                    <div class="k-portlet k-portlet--height-fluid">
+                      <div class="k-portlet__body">
+                        <div id="k-widget-slider-14-1" class="k-slider carousel slide" data-ride="carousel" data-interval="8000">
+                          <div class="k-slider__head">
+                            <div class="k-slider__label">Werkpakket aanmaken</div>
+                          </div>
 
-</ion-header>
+                          <div class="k-widget-1">
+                            <div class="tab-content">
+                              <div class="tab-pane fade active show" id="k_tabs_19_15be902d452de3" role="tabpanel">
+                                <div class="k-widget-1__item">
+                                  <div class="k-widget-1__item-info">
+                                      <form>
+                                          <div class="form-group">
+                                            <label>Titel werkpakket</label>
+                                            <input class="form-control" placeholder="Vul hier een werkpakket titel in">
+                                          </div>
+                                      </form>                   
+                                  </div>
+                                </div>
+                                <div class="k-widget-1__item">
+                                  <div class="k-widget-1__item-info">
+                                    <div style="float:left;">
+                                      <label style="font-size:1rem; font-weight: 400;">Oplosgroep</label>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                    <label class="custom-control-label" for="defaultUnchecked">Divisie infra</label>
+                                  </div>
+                                  <div class="custom-control custom-radio">
+                                      <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                      <label class="custom-control-label" for="defaultUnchecked">Divisie services</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                        <label class="custom-control-label" for="defaultUnchecked">Divisie FMH</label>
+                                      </div>
+                                      <div class="custom-control custom-radio">
+                                          <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                          <label class="custom-control-label" for="defaultUnchecked">Management</label>
+                                        </div>
+                                      </div>
+                                      
+                                      <div style="float:left; margin-left: 1em;">
+                                          <label style="font-size:1rem; font-weight: 400;">Niveau</label>
+                                          <div class="custom-control custom-radio">
+                                              <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                              <label class="custom-control-label" for="defaultUnchecked">Junior</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                                <label class="custom-control-label" for="defaultUnchecked">Mediour</label>
+                                              </div>
+                                              <div class="custom-control custom-radio">
+                                                  <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                                  <label class="custom-control-label" for="defaultUnchecked">Senior</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                                    <label class="custom-control-label" for="defaultUnchecked">Expert</label>
+                                                  </div>
+                                      </div>
+                                      <div style="float:left; margin-left: 1em;">
+                                              <label style="font-size:1rem; font-weight: 400;">Benodigde skillset</label>
+                                              <br>
+                                            <ss-multiselect-dropdown [options]="myOptions" [texts]="myTexts" [settings]="mySettings" [(ngModel)]="optionsModel"></ss-multiselect-dropdown>
+                                        
+                                      </div>
+                                </div>
+                              </div>
+                              <div class="k-widget-1__item">
+                                <div class="k-widget-1__item-info">
+                                <div style="float:left;">
+                                    <label style="font-size:1rem; font-weight: 400;">Deadline</label>
+                                    <br>
+                                    <ng-datepicker [options]="options" [(ngModel)]="date"></ng-datepicker>
+                                </div>
+                                <div style="float:left; margin-left:1em;">
+                                    <form>
+                                        <div class="form-group">
+                                          <label>Doorlooptijd</label>
+                                          <input class="form-control" placeholder="Schat het aantal uren">
+                                        </div>
+                                    </form>    
+                                </div>
+                                <div style="float:left; margin-left:1em;">
+                                    <form>
+                                        <div class="form-group">
+                                          <label>Afhankelijkheid</label>
+                                          <input class="form-control" placeholder="Typ titel of werkpakketnummer">
+                                        </div>
+                                    </form>    
+                                </div>
+                                </div>
+                              </div>
+                              <div class="k-widget-1__item">
+                                <div class="k-widget-1__item-info">
+                                  <form>
+                                    <div class="form-group">
+                                        <label>Beschrijving werkpakket</label>
+                                        <textarea class="form-control" placeholder="Geef hier een korte omschrijving van je werkpakket" rows="3"></textarea>
+                                      </div>
+                                      </form>
+                                </div>
+                              </div>
+                              <div class="k-widget-1__item">
+                                <div class="k-widget-1__item-info">
+                                  <div style="float:left;">
+                                      <button type="button" class="btn btn-success">Opslaan</button>
+                                  </div>
 
-
-<ion-content padding>
-
-</ion-content>
+                                  <div style="float:left; margin-left: 1em;">
+                                      <button type="button" class="btn btn-seconday">Annuleren</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!--end::Portlet-->
+                </div>
+              </div>
+  
+              <!--end::Row-->
+  
+              <!--end::Dashboard 5-->
+            </div>
+  
+            <!-- end:: Content Body -->
+          </div>
+  
+          <!-- end:: Content -->
+        </div>
+      </div>
+    </div>
+  
+    <!-- end:: Page -->
+    <!-- begin::Scrolltop -->
+    <div id="k_scrolltop" class="k-scrolltop">
+      <i class="la la-arrow-up"></i>
+    </div>
+    <!-- end::Scrolltop -->
+    </ion-content>
+  

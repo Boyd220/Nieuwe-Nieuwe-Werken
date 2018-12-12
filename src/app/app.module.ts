@@ -10,9 +10,9 @@ import { HomePage } from '../pages/home/home';
 import { PakketMakenPage } from '../pages/pakket-maken/pakket-maken';
 import { ReviewPage } from '../pages/review/review';
 import { ProfielPage } from '../pages/profiel/profiel';
-
-import { HttpClientModule } from '@angular/common/http'
-
+import { HttpClientModule } from '@angular/common/http';
+import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
+import { NgDatepickerModule } from 'ng2-datepicker';
 
 @NgModule({
   declarations: [
@@ -25,6 +25,8 @@ import { HttpClientModule } from '@angular/common/http'
   imports: [
     BrowserModule,
     HttpClientModule,
+    MultiselectDropdownModule,
+    NgDatepickerModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
