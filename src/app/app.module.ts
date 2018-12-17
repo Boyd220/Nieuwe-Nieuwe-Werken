@@ -8,19 +8,19 @@ import { SQLite } from '@ionic-native/sqlite';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { PakketMakenPage } from '../pages/pakket-maken/pakket-maken';
-import { ReviewPage } from '../pages/review/review';
 import { ProfielPage } from '../pages/profiel/profiel';
 import { HttpClientModule } from '@angular/common/http';
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
 import { NgDatepickerModule } from 'ng2-datepicker';
+import { ZoekCollegasPage } from '../pages/zoek-collegas/zoek-collegas';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     PakketMakenPage,
-    ReviewPage,
-    ProfielPage
+    ProfielPage,
+    ZoekCollegasPage
   ],
   imports: [
     BrowserModule,
@@ -34,8 +34,8 @@ import { NgDatepickerModule } from 'ng2-datepicker';
     MyApp,
     HomePage,
     PakketMakenPage,
-    ReviewPage,
-    ProfielPage
+    ProfielPage,
+    ZoekCollegasPage
   ],
   providers: [
     StatusBar,

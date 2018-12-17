@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { PakketMakenPage } from '../pages/pakket-maken/pakket-maken';
 import { ProfielPage } from '../pages/profiel/profiel';
-import { ReviewPage } from '../pages/review/review';
+import { ZoekCollegasPage } from '../pages/zoek-collegas/zoek-collegas';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +28,7 @@ export class MyApp {
       { title: 'NNW', component: HomePage },
       { title: 'Werkpakket maken', component: PakketMakenPage },
       { title: 'Profiel', component: ProfielPage },
-      { title: 'Bekijk je reviews', component: ReviewPage }
+      { title: 'Zoek collega', component: ZoekCollegasPage }
     ];
   }
 
