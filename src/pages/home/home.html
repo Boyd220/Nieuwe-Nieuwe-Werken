@@ -7,9 +7,7 @@
         </a>
       </div>
       <div class="k-header-mobile__toolbar">
-        <button class="k-header-mobile__toolbar-toggler k-header-mobile__toolbar-toggler--left" id="k_aside_mobile_toggler"><span></span></button>
-        <button class="k-header-mobile__toolbar-toggler" id="k_header_mobile_toggler"><span></span></button>
-        <button class="k-header-mobile__toolbar-topbar-toggler" id="k_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+        <button ion-button menuToggle class="k-header-mobile__toolbar-toggler k-header-mobile__toolbar-toggler--left" id="k_aside_mobile_toggler"><span></span></button>
       </div>
     </div>
 
@@ -19,7 +17,7 @@
 
         <!-- begin:: Aside -->
         <button class="k-aside-close " id="k_aside_close_btn"><i class="la la-close"></i></button>
-        <div class="k-aside  k-aside--fixed 	k-grid__item k-grid k-grid--desktop k-grid--hor-desktop" id="k_aside">
+        <div class="k-aside  k-aside--fixed 	k-grid__item k-grid k-grid--desktop k-grid--hor-desktop k-hidden-mobile" id="k_aside">
 
           <!-- begin:: Aside -->
           <div class="k-aside__brand	k-grid__item " id="k_aside_brand">
@@ -48,7 +46,13 @@
               <p class="center-img"><img src="assets/custom-imgs/location.png " width="20" height="30">Koningskade 4, Den
                 Haag</p>
               <label class="center-img bold-font-weight">Gemiddelde rating</label>
-              <img class="center-img" src="/assets/custom-imgs/four-stars.png" width="60" height="50">
+              <div style="text-align:center;">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
               <label class="center-img bold-font-weight">Uren afgelopen kwartaal</label>
               <img src="assets/custom-imgs/grafiek.png" class="center-img" alt="Profiel foto" height="200" width="300">
             </div>
@@ -98,7 +102,7 @@
               <!--end: Notifications -->
 
               <!--begin: User bar -->
-              <div class="k-header__topbar-item k-header__topbar-item--user">
+              <div class="k-header__topbar-item k-header__topbar-item--user k-hidden-mobile">
                 <div class="k-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px -2px">
                   <div class="k-header__topbar-user">
                     <span class="k-header__topbar-welcome k-hidden-mobile">Hi,</span>
@@ -308,7 +312,7 @@
 
 
                       <div class="k-widget-14__body">
-                        <div class="col-lg-6 col-xl-6" style="border-right: 1px solid black;">
+                        <div class="col-lg-6 col-xl-6">
                           <div class="k-widget-14__product">
                             <div class="k-widget-14__thumb">
                               <a href="#"><img src="../assets/media/users/100_3.jpg" class="k-widget-14__image--landscape" alt="" title="" /></a>
@@ -322,14 +326,17 @@
                               </div>
                             </div>
 
-                            <div class="k-widget-14__data">
+                            <div class="k-widget-14__data" style="margin-bottom: 1em;">
                               <div class="k-widget-14__info">
                                 <div class="k-widget-14__info-title k-font-brand">20</div>
                                 <div class="k-widget-14__desc">Uur</div>
-                              </div>
-                              <div class="k-widget-14__info">
-                                <img src="/assets/custom-imgs/four-stars.png" width="60" height="50">
-                              </div>
+                       
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star"></span>
+                       </div>
                             </div>
                           </div>
                         </div>
@@ -347,14 +354,17 @@
                                 Maandelijkse onderhoudswerkzaamheden...
                               </div>
                             </div>
-                            <div class="k-widget-14__data">
+                            <div class="k-widget-14__data" style="margin-bottom: 1em;">
                               <div class="k-widget-14__info">
                                 <div class="k-widget-14__info-title k-font-brand">6</div>
                                 <div class="k-widget-14__desc">Uur</div>
-                              </div>
-                              <div class="k-widget-14__info">
-                                <img src="/assets/custom-imgs/two-stars.png" width="60" height="50">
-                              </div>
+                       
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                                      <span class="fa fa-star"></span>
+                       </div>
                             </div>
                           </div>
                         </div>

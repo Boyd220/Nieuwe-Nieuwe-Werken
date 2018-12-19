@@ -6,9 +6,7 @@
       </a>
     </div>
     <div class="k-header-mobile__toolbar">
-      <button class="k-header-mobile__toolbar-toggler k-header-mobile__toolbar-toggler--left" id="k_aside_mobile_toggler"><span></span></button>
-      <button class="k-header-mobile__toolbar-toggler" id="k_header_mobile_toggler"><span></span></button>
-      <button class="k-header-mobile__toolbar-topbar-toggler" id="k_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+      <button ion-button menuToggle class="k-header-mobile__toolbar-toggler k-header-mobile__toolbar-toggler--left" id="k_aside_mobile_toggler"><span></span></button>
     </div>
   </div>
 
@@ -18,7 +16,7 @@
 
       <!-- begin:: Aside -->
       <button class="k-aside-close " id="k_aside_close_btn"><i class="la la-close"></i></button>
-      <div class="k-aside  k-aside--fixed 	k-grid__item k-grid k-grid--desktop k-grid--hor-desktop" id="k_aside">
+      <div class="k-aside  k-aside--fixed 	k-grid__item k-grid k-grid--desktop k-grid--hor-desktop k-hidden-mobile" id="k_aside">
 
         <!-- begin:: Aside -->
         <div class="k-aside__brand	k-grid__item " id="k_aside_brand">
@@ -47,7 +45,13 @@
             <p class="center-img"><img src="assets/custom-imgs/location.png " width="20" height="30">Koningskade 4, Den
               Haag</p>
             <label class="center-img bold-font-weight">Gemiddelde rating</label>
-            <img class="center-img" src="/assets/custom-imgs/four-stars.png" width="60" height="50">
+            <div style="text-align:center;">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
             <label class="center-img bold-font-weight">Uren afgelopen kwartaal</label>
             <img src="assets/custom-imgs/grafiek.png" class="center-img" alt="Profiel foto" height="200" width="300">
           </div>
@@ -96,7 +100,7 @@
             <!--end: Notifications -->
 
             <!--begin: User bar -->
-            <div class="k-header__topbar-item k-header__topbar-item--user">
+            <div class="k-header__topbar-item k-header__topbar-item--user k-hidden-mobile">
               <div class="k-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px -2px">
                 <div class="k-header__topbar-user">
                   <span class="k-header__topbar-welcome k-hidden-mobile">Hi,</span>
@@ -139,8 +143,8 @@
             <!--begin::Dashboard 5-->
 
             <!--begin::Row-->
-            <div class="row">
-              <div class="col-lg-12 col-xl-8 order-lg-1 order-xl-1" id="zoek-collega-wrapper">
+          
+              <div class="col-lg-12 col-xl-12 order-lg-1 order-xl-1" id="zoek-collega-wrapper">
 
                 <!--begin::Portlet-->
                 <div class="k-portlet k-portlet--height-fluid">
@@ -155,7 +159,152 @@
                           <div class="tab-pane fade active show" id="k_tabs_19_15be902d452de3" role="tabpanel">
                             <div class="k-widget-1__item">
                               <div class="k-widget-1__item-info">
-                                
+                                <div id="custom-search-input">
+                                  <div class="input-group col-md-12">
+                                    <input type="text" class="form-control input-lg" placeholder="Typ een naam..." />
+                                    <span class="input-group-btn">
+                                      <button class="btn btn-info btn-lg" type="button">
+                                        <i class="flaticon2-search-1"></i>
+                                      </button>
+                                    </span>
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="panel panel-default">
+                                  <div class="panel-body">
+                                    <div class="table-container">
+                                      <table class="table table-filter">
+                                        <tbody>
+                                          <tr data-status="pagado">
+                                            <td>
+                                              <div class="media" style="margin-left:1em;">
+                                                <a href="#" class="pull-left">
+                                                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                                <div class="media-body">
+                                                  <h4 class="title" style="margin-left:1em;">
+                                                    Toon van Hoeveveld
+                                                    <span class="pull-right pagado">(Vrij)</span>
+                                                  </h4>
+                                                  <p class="summary" style="margin-left:1em;">C#, AngularJS, Node</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div style="text-align:center;">
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr data-status="pendiente">
+                                            <td>
+                                              <div class="media" style="margin-left:1em;">
+                                                <a href="#" class="pull-left">
+                                                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                                <div class="media-body">
+                                                  <h4 class="title" style="margin-left:1em;">
+                                                    Mohamed bin Alsadi
+                                                    <span class="pull-right pendiente">(Bezig)</span>
+                                                  </h4>
+                                                  <p class="summary" style="margin-left:1em;">Helpdesk, beleid, communicatie</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align:center;">
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star"></span>
+                                                </div>
+                                              </td>
+                                          </tr>
+                                          <tr data-status="cancelado">
+                                            <td>
+                                              <div class="media" style="margin-left:1em;">
+                                                <a href="#" class="pull-left">
+                                                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                                <div class="media-body">
+                                                  <h4 class="title" style="margin-left:1em;">
+                                                   Jochem Suikerbuik
+                                                    <span class="pull-right cancelado">(Afwezig)</span>
+                                                  </h4>
+                                                  <p class="summary" style="margin-left:1em;">C#, AngularJS, Node</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align:center;">
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star"></span>
+                                                </div>
+                                              </td>
+                                          </tr>
+                                          <tr data-status="pagado" class="selected">
+                                            <td>
+                                              <div class="media" style="margin-left:1em;">
+                                                <a href="#" class="pull-left">
+                                                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                                <div class="media-body">
+                                                  <h4 class="title" style="margin-left:1em;">
+                                                    Kaat Hool
+                                                    <span class="pull-right pagado">(Vrij)</span>
+                                                  </h4>
+                                                  <p class="summary" style="margin-left:1em;">Citrix, helpdesk, serverbeheer</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align:center;">
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star"></span>
+                                                </div>
+                                              </td>
+                                          </tr>
+                                          <tr data-status="pendiente">
+                                            <td>
+                                              <div class="media" style="margin-left:1em;">
+                                                <a href="#" class="pull-left">
+                                                  <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                </a>
+                                                <div class="media-body">
+                                                  <h4 class="title" style="margin-left:1em;">
+                                                   Hans Klok
+                                                    <span class="pull-right pendiente">(Bezig)</span>
+                                                  </h4>
+                                                  <p class="summary" style="margin-left:1em;">PHP, javascript, C++</p>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td>
+                                                <div style="text-align:center;">
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star checked"></span>
+                                                  <span class="fa fa-star"></span>
+                                                  <span class="fa fa-star"></span>
+                                                </div>
+                                              </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -166,7 +315,7 @@
                   <!--end::Portlet-->
                 </div>
               </div>
-            </div>
+            
 
             <!--end::Row-->
 

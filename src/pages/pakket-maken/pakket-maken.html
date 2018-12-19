@@ -7,9 +7,7 @@
           </a>
         </div>
         <div class="k-header-mobile__toolbar">
-          <button class="k-header-mobile__toolbar-toggler k-header-mobile__toolbar-toggler--left" id="k_aside_mobile_toggler"><span></span></button>
-          <button class="k-header-mobile__toolbar-toggler" id="k_header_mobile_toggler"><span></span></button>
-          <button class="k-header-mobile__toolbar-topbar-toggler" id="k_header_mobile_topbar_toggler"><i class="flaticon-more"></i></button>
+          <button ion-button menuToggle class="k-header-mobile__toolbar-toggler k-header-mobile__toolbar-toggler--left" id="k_aside_mobile_toggler"><span></span></button>
         </div>
       </div>
   
@@ -19,7 +17,7 @@
   
           <!-- begin:: Aside -->
           <button class="k-aside-close " id="k_aside_close_btn"><i class="la la-close"></i></button>
-          <div class="k-aside  k-aside--fixed 	k-grid__item k-grid k-grid--desktop k-grid--hor-desktop" id="k_aside">
+          <div class="k-aside  k-aside--fixed 	k-grid__item k-grid k-grid--desktop k-grid--hor-desktop k-hidden-mobile" id="k_aside">
   
             <!-- begin:: Aside -->
             <div class="k-aside__brand	k-grid__item " id="k_aside_brand">
@@ -48,7 +46,13 @@
                 <p class="center-img"><img src="assets/custom-imgs/location.png " width="20" height="30">Koningskade 4, Den
                   Haag</p>
                 <label class="center-img bold-font-weight">Gemiddelde rating</label>
-                <img class="center-img" src="/assets/custom-imgs/four-stars.png" width="60" height="50">
+                <div style="text-align:center;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
                 <label class="center-img bold-font-weight">Uren afgelopen kwartaal</label>
                 <img src="assets/custom-imgs/grafiek.png" class="center-img" alt="Profiel foto" height="200" width="300">
               </div>
@@ -98,7 +102,7 @@
                 <!--end: Notifications -->
   
                 <!--begin: User bar -->
-                <div class="k-header__topbar-item k-header__topbar-item--user">
+                <div class="k-header__topbar-item k-header__topbar-item--user k-hidden-mobile">
                   <div class="k-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px -2px">
                     <div class="k-header__topbar-user">
                       <span class="k-header__topbar-welcome k-hidden-mobile">Hi,</span>
@@ -184,40 +188,40 @@
                                     <div style="float:left;">
                                       <label style="font-size:1rem; font-weight: 400;">Oplosgroep</label>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                                    <label class="custom-control-label" for="defaultUnchecked">Divisie infra</label>
+                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+                                    <label class="custom-control-label" for="defaultUnchecked1">Divisie infra</label>
                                   </div>
                                   <div class="custom-control custom-radio">
-                                      <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                                      <label class="custom-control-label" for="defaultUnchecked">Divisie services</label>
+                                      <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                                      <label class="custom-control-label" for="defaultUnchecked2">Divisie services</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                                        <label class="custom-control-label" for="defaultUnchecked">Divisie FMH</label>
+                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
+                                        <label class="custom-control-label" for="defaultUnchecked3">Divisie FMH</label>
                                       </div>
                                       <div class="custom-control custom-radio">
-                                          <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                                          <label class="custom-control-label" for="defaultUnchecked">Management</label>
+                                          <input type="checkbox" class="custom-control-input" id="defaultUnchecked4">
+                                          <label class="custom-control-label" for="defaultUnchecked4">Management</label>
                                         </div>
                                       </div>
                                       
                                       <div style="float:left; margin-left: 1em;">
                                           <label style="font-size:1rem; font-weight: 400;">Niveau</label>
                                           <div class="custom-control custom-radio">
-                                              <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                                              <label class="custom-control-label" for="defaultUnchecked">Junior</label>
+                                              <input type="checkbox" class="custom-control-input" id="defaultUnchecked5" >
+                                              <label class="custom-control-label" for="defaultUnchecked5">Junior</label>
                                             </div>
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                                                <label class="custom-control-label" for="defaultUnchecked">Medior</label>
+                                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
+                                                <label class="custom-control-label" for="defaultUnchecked6">Medior</label>
                                               </div>
                                               <div class="custom-control custom-radio">
-                                                  <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                                                  <label class="custom-control-label" for="defaultUnchecked">Senior</label>
+                                                  <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
+                                                  <label class="custom-control-label" for="defaultUnchecked7">Senior</label>
                                                 </div>
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-                                                    <label class="custom-control-label" for="defaultUnchecked">Expert</label>
+                                                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked8">
+                                                    <label class="custom-control-label" for="defaultUnchecked8">Expert</label>
                                                   </div>
                                       </div>
                                       <div style="float:left; margin-left: 1em;">
